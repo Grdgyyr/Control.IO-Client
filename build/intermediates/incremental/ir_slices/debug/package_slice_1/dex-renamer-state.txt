@@ -1,4 +1,0 @@
-#Mon Apr 09 14:50:09 CST 2018
-base.0=C\:\\Users\\grdgy\\Desktop\\Client_Control-IO V3.0\\Android_ControlIO\\Control_IO\\build\\intermediates\\transforms\\dexMerger\\debug\\2
-path.0=classes.dex
-renamed.0=classes.dex
