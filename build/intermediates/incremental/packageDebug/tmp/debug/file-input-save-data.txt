@@ -1,0 +1,11 @@
+#Internal package file, do not edit.
+#Wed Apr 04 12:58:34 CST 2018
+1.base=C\:\\Users\\grdgy\\Desktop\\Client_Control-IO V3.0\\Android_ControlIO\\Control_IO\\build\\intermediates\\transforms\\dexMerger\\debug\\13
+0.baseType=DIRECTORY
+1.baseType=DIRECTORY
+count=2
+1.set=DEX
+0.path=classes.dex
+0.set=DEX
+0.base=C\:\\Users\\grdgy\\Desktop\\Client_Control-IO V3.0\\Android_ControlIO\\Control_IO\\build\\intermediates\\transforms\\dexMerger\\debug\\12
+1.path=classes.dex
