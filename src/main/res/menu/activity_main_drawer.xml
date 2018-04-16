@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/g2">
+
+
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_action_home"
+            android:title="Home"
+            />
+        <item
+            android:id="@+id/nav_connection"
+            android:icon="@drawable/ic_action_connection"
+            android:title="Connection" />
+        <item
+            android:id="@+id/nav_rating"
+            android:icon="@drawable/ic_action_rating"
+            android:title="Rate us" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_touchpad"
+            android:icon="@drawable/ic_action_touch"
+            android:title="Touchpad" />
+        <item
+            android:id="@+id/nav_mouse"
+            android:icon="@drawable/ic_action_mouse"
+            android:title="Air Mouse" />
+        <item
+            android:id="@+id/nav_gesture"
+            android:icon="@drawable/ic_action_gesture"
+            android:title="Gesture" />
+        <item
+            android:id="@+id/nav_mic"
+            android:icon="@drawable/ic_action_microphone"
+            android:title="Microphone" />
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_action_camera"
+            android:title="Camera" />
+
+    </group >
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/g3">
+        <item
+            android:id="@+id/nav_present"
+            android:icon="@drawable/ic_action_presentation"
+            android:title="Presentation Mode" />
+
+    </group>
+
+
+
+
+
+</menu>

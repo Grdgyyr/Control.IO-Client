@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Control.IO</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_gyromouse">Gyro Mouse</string>
+    <string name="title_touchpad">Touchpad</string>
+    <string name="title_connection">Connection</string>
+    <string name="title_gesture">Gesture</string>
+    <string name="title_home">Home</string>
+    <string name="title_presentation">Presentation Mode</string>
+
+    <!--Dialog Fragment-->
+    <string name="dialog_newgesture_message">Please name your gesture</string>
+    <string name="dialog_newgesture_tv_gyro">Datasets length: Gyro </string>
+    <string name="dialog_newgesture_tv_acc"> Acc </string>
+    <string name="dialog_newgesture_hint">My gesture</string>
+    <string name="dialog_newgesture_positive">Proceed</string>
+    <string name="dialog_newgesture_negative">Discard</string>
+    <string name="button_remove">remove</string>
+    <string name="button_delete">button_delete</string>
+
+    <!-- Activity Gesture Recognizer -->
+    <string name="button_identify">Identify</string>
+    <string name="button_new_gesture">Record new</string>
+    <string name="activity_recognizer_title">Gesture</string>
+
+    <string name="camera_location_back">back</string>
+    <string name="camera_location_front">front</string>
+    <string name="camera_location_unknown">Unknown</string>
+
+    <string name="pref_camera">Camera</string>
+    <string name="pref_flash_light">Enable flash light</string>
+    <string name="pref_stream_resolution">Resolution</string>
+    <string name="pref_stream_quality">Quality</string>
+    <string name="pref_streaming">Video Streaming</string>
+    <string name="pref_projector">Projector Server</string>
+    <string name="pref_server">Server</string>
+    <string name="pref_server_summ">HTTP address of the projector server</string>
+    <string name="stream_live">LIVE</string>
+    <string name="stream_connect">Connecting</string>
+    <string name="stream_video">Stream Video</string>
+    <string name="stream_disconnected">Disconnected</string>
+
+</resources>

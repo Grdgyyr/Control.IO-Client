@@ -1,0 +1,344 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="Fragments.RecognitionTool"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/rt_frame_padding"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_rt_section_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Recording settings"
+            android:textColor="@color/rt_text"
+            android:textSize="@dimen/rt_section_size"
+            android:layout_marginBottom="@dimen/rt_space_between_item"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_rt_cheat_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cheats - use the same gesture to identify"
+                android:textColor="@color/rt_text"
+                android:textSize="@dimen/rt_text_size"
+                android:layout_marginBottom="@dimen/rt_space_between_item"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_rt_gesture_repetition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Number of repetitions "
+                    android:textColor="@color/rt_text"
+                    android:textSize="@dimen/rt_text_size"
+                    android:layout_marginBottom="@dimen/rt_space_between_item"
+                    android:layout_centerVertical="true"/>
+
+                <Spinner
+                    android:id="@+id/s_rt_gesture_repetition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_rt_gesture_repetition"
+                    android:soundEffectsEnabled="true"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_rt_min_length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Gesture sequence MIN length: "
+                    android:textColor="@color/rt_text"
+                    android:textSize="@dimen/rt_text_size"
+                    android:layout_centerVertical="true"/>
+                <EditText
+                    android:id="@+id/et_rt_min_length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_rt_min_length"
+                    android:textColor="@color/blue_bright"
+                    android:textSize="@dimen/rt_text_size"
+                    android:inputType="number"
+                    android:hint="12345"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_rt_min_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Gesture MIN recording duration: "
+                    android:textColor="@color/rt_text"
+                    android:textSize="@dimen/rt_text_size"
+                    android:layout_centerVertical="true"/>
+                <EditText
+                    android:id="@+id/et_rt_min_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_rt_min_duration"
+                    android:textColor="@color/blue_bright"
+                    android:textSize="@dimen/rt_text_size"
+                    android:inputType="number"
+                    android:hint="12345"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_rt_max_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Gesture MAX recording duration: "
+                    android:textColor="@color/rt_text"
+                    android:textSize="@dimen/rt_text_size"
+                    android:layout_centerVertical="true"/>
+                <EditText
+                    android:id="@+id/et_rt_max_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_rt_max_duration"
+                    android:textColor="@color/blue_bright"
+                    android:textSize="@dimen/rt_text_size"
+                    android:inputType="number"
+                    android:hint="12345"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Use sensor"
+                android:textColor="@color/rt_text"
+                android:textSize="@dimen/rt_section_size"
+                android:layout_marginBottom="@dimen/rt_space_between_item"/>
+
+            <CheckBox
+                android:id="@+id/cb_rt_accelerometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accelerometer"
+                android:textColor="@color/rt_text"
+                android:textSize="@dimen/rt_text_size"
+                android:layout_marginBottom="@dimen/rt_space_between_item"/>
+            <CheckBox
+                android:id="@+id/cb_rt_gyroscope"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gyroscope"
+                android:textColor="@color/rt_text"
+                android:textSize="@dimen/rt_text_size"
+                android:layout_marginBottom="@dimen/rt_space_between_item"
+                android:enabled="false"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/rt_space_between_item">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Filters"
+                android:textSize="@dimen/rt_section_size"
+                android:textColor="@color/rt_text"
+                android:layout_marginBottom="@dimen/rt_space_between_item"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/rt_space_between_item">
+                <CheckBox
+                    android:id="@+id/chb_rt_is_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Use low-pass / high-pass filter"
+                    android:textColor="@color/rt_text"
+                    android:textSize="@dimen/rt_text_size"
+                    android:layout_centerVertical="true"
+                    android:enabled="false"/>
+                <!--<Spinner-->
+                <!--android:id="@+id/s_rt_filter_type"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_toRightOf="@+id/chb_rt_is_filter"-->
+                <!--android:layout_centerVertical="true" />-->
+                <!--android:entries="@array/filter_type"-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/rt_space_between_item"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+                <CheckBox
+                    android:id="@+id/chb_rt_reduction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reduce sequence to:"
+                    android:textColor="@color/rt_text"
+                    android:textSize="@dimen/rt_text_size"
+                    android:layout_centerVertical="true"/>
+                <EditText
+                    android:id="@+id/et_rt_reduction_length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/chb_rt_reduction"
+                    android:layout_centerVertical="true"
+                    android:inputType="number"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/rt_space_between_item">
+                <CheckBox
+                    android:id="@+id/chb_rt_is_average"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Average Samples:"
+                    android:textColor="@color/rt_text"
+                    android:textSize="@dimen/rt_text_size"
+                    android:layout_centerVertical="true"/>
+                <Spinner
+                    android:id="@+id/s_rt_average_neighbours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/chb_rt_is_average"
+                    android:layout_centerVertical="true"
+                    android:soundEffectsEnabled="true"/>
+                <!--android:entries="@array/average_neighbours"-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/s_rt_average_neighbours"
+                    android:text="neighbours"
+                    android:textColor="@color/rt_text"
+                    android:textSize="@dimen/rt_text_size"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/rt_space_between_item">
+                <CheckBox
+                    android:id="@+id/chb_rt_is_sectioned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sectioned Sequence: "
+                    android:textColor="@color/rt_text"
+                    android:textSize="@dimen/rt_text_size"
+                    android:layout_centerVertical="true"/>
+                <Spinner
+                    android:id="@+id/s_rt_sections_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/chb_rt_is_sectioned"
+                    android:layout_centerVertical="true"/>
+                <!--android:entries="@array/average_neighbours"-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/s_rt_sections_number"
+                    android:text="sections"
+                    android:textColor="@color/rt_text"
+                    android:textSize="@dimen/rt_text_size"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/rt_space_between_item">
+
+            <TextView
+                android:id="@+id/tv_rt_algorithm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Recognition Algorithm"
+                android:textColor="@color/rt_text"
+                android:textSize="@dimen/rt_section_size"
+                android:layout_marginBottom="@dimen/rt_space_between_item"/>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tl_rt_algorithm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tv_rt_algorithm"
+                style="@style/RecognitionToolsTabLayout"
+                app:tabGravity="fill"/>
+            <!--app:tabMode="fixed"-->
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_algorithm"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/tl_rt_algorithm">
+            </android.support.v4.view.ViewPager>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. Compare with:"
+                android:textColor="@color/rt_text"
+                android:textSize="@dimen/rt_section_size"
+                android:layout_marginBottom="@dimen/rt_space_between_item"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All saved gestures"
+                android:textColor="@color/rt_text"
+                android:textSize="@dimen/rt_text_size"
+                android:layout_marginBottom="@dimen/rt_space_between_item"
+                android:enabled="false"
+                android:checked="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

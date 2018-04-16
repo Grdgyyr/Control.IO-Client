@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f79554</color>
+    <color name="colorPrimaryDark">#c06627</color>
+    <color name="colorAccent">#ffc682</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorPrimaryLight">#FF586CDC</color>
+    <color name="green_bright">#d0ffd0</color>
+    <color name="green_primary">#41ff41</color>
+    <color name="blue_bright">#c0ebff</color>
+    <color name="grey_dark">#4c4c4c</color>
+    <color name="grey_dark_bright">#7c7c7c</color>
+    <color name="hot_pink">#FF0080</color>
+    <color name="blue_primary">#34c0ff</color>
+
+    <color name="listview">#E9E0DB</color>
+    <color name="listview_header">#cac0a7</color>
+    <color name="listview_selected">#e9b569</color>
+    <color name="listview_pressed">#CFF0FF</color>
+
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#EBEBEB</color>
+    <color name="red">#AA1111</color>
+    <color name="blue">#7fd7ff</color>
+    <color name="green">#a2ffa2</color>
+
+
+    <color name="rt_text">@color/white</color>
+    <color name="identify_disable">@color/grey_dark_bright</color>
+    <color name="identify_enable">@color/white</color>
+    <color name="identify_pending">@color/blue_bright</color>
+</resources>

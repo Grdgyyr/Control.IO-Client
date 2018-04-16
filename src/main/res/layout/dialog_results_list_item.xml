@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_list_item_matching"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:padding="4dp"
+    android:weightSum="1">
+    <TextView
+        android:id="@+id/list_item_matching_fit_rate"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:text="Match"
+        android:textColor="@color/black"
+        android:textSize="@dimen/rt_text_size"
+        android:gravity="center_horizontal"
+        android:singleLine="true"/>
+    <TextView
+        android:id="@+id/list_item_matching_sensor"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:text="Sensor"
+        android:textColor="@color/black"
+        android:textSize="@dimen/rt_text_size"
+        android:gravity="center_horizontal"
+        android:singleLine="true"/>
+    <TextView
+        android:id="@+id/list_item_matching_algorithm"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:text="Alg."
+        android:textColor="@color/black"
+        android:textSize="@dimen/rt_text_size"
+        android:gravity="center_horizontal"
+        android:singleLine="true"/>
+    <TextView
+        android:id="@+id/list_item_matching_gesture_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:text="Gesture Name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/rt_text_size" />
+</LinearLayout>

@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.FragmentGestureRecognizer">
+
+
+    <LinearLayout
+        android:id="@+id/ll_button_container"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingLeft="2dp"
+        android:paddingRight="4dp"
+        android:orientation="vertical"
+        android:paddingTop="60dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar_CreateGesture"
+                android:layout_gravity="right"
+                android:layout_alignTop="@+id/button_create_gesture"
+                android:layout_alignRight="@+id/button_create_gesture"
+                android:layout_alignLeft="@+id/button_create_gesture"
+                android:layout_alignBottom="@+id/button_create_gesture"
+
+                android:progressDrawable="@drawable/progressbar_new_gesture" />
+
+            <Button
+                android:id="@+id/button_create_gesture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create"
+                android:textColor="@color/grey_dark"
+                android:textSize="@dimen/button_size"
+
+                android:enabled="true"/>
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar_Identify"
+                android:layout_gravity="right"
+                android:layout_alignTop="@+id/button_identify"
+                android:layout_alignRight="@+id/button_identify"
+                android:layout_alignLeft="@+id/button_identify"
+                android:layout_alignBottom="@+id/button_identify"
+
+                android:progressDrawable="@drawable/progressbar_identify"/>
+
+            <Button
+                android:id="@+id/button_identify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Identify"
+                android:textColor="@color/grey_dark"
+                android:textSize="@dimen/button_size"
+                android:enabled="true"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

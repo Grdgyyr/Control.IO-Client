@@ -1,0 +1,20 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="expandable_listview_width_dp">280dp</dimen>
+    <dimen name="expandable_listview_minheight_dp">55dp</dimen>
+    <integer name="expandable_listview_width">280</integer>
+    <integer name="animation_dauration">300</integer>
+
+    <dimen name="button_size">60dp</dimen>
+    <!--Checkboxes in Footer-->
+    <dimen name="checkbox_margin">6dp</dimen>
+
+    <!--Recognition Tools-->
+    <dimen name="rt_frame_padding">16dp</dimen>
+    <dimen name="rt_space_between_item">8dp</dimen>
+    <dimen name="rt_section_size">22sp</dimen>
+    <dimen name="rt_text_size">18sp</dimen>
+</resources>

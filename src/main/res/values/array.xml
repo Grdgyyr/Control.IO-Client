@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sensor_type">
+        <item>Gyroscope</item>
+        <item>Accelerometer</item>
+    </string-array>
+
+    <string-array name="average_neighbours">
+        <item>1 (3)</item>
+        <item>2 (5)</item>
+        <item>3 (7)</item>
+        <item>4 (9)</item>
+        <item>5 (11)</item>
+        <item>6 (13)</item>
+    </string-array>
+
+    <string-array name="filter_type">
+        <item>low-pass filter</item>
+        <item>high_pass filter</item>
+        <item>Kalmahan filter</item>
+    </string-array>
+
+    <string-array name="section_type">
+        <item>25</item>
+        <item>31</item>
+        <item>37</item>
+    </string-array>
+
+    <string-array name="adjustment_window_condition">
+        <item>Sakoe-Chiba Band</item>
+        <item>Itakura Parallelogram</item>
+    </string-array>
+
+    <string-array name="gesture_repetition">
+        <item>1 one</item>
+        <item>2 twice</item>
+        <item>3 thrice</item>
+    </string-array>
+
+    <string-array name="activation_function">
+        <item>null</item>
+        <item>Tangens</item>
+        <item>Sigmod</item>
+        <item>Linear</item>
+        <item>Elliott</item>
+    </string-array>
+
+    <string-array name="pref_syncConnectionTypes_values" translatable="false">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+    </string-array>
+
+</resources>

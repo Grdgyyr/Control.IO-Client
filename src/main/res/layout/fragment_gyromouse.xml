@@ -1,0 +1,87 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Gyromouse.GyroMouseFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#eeeed1"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnSens"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:background="@drawable/btn_round"
+            android:drawableBottom="@drawable/ic_menu_slew"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnScroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <View
+                android:id="@+id/btn_left_click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:background="#778899" />
+
+            <Button
+                android:id="@+id/btnKeyboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0dp"
+                android:drawableBottom="@drawable/ic_menu_keyboard"
+                />
+
+
+            <View
+                android:id="@+id/btn_right_click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:background="#778899" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
